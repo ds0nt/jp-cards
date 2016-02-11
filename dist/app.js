@@ -21,6 +21,11 @@ var Card = React.createClass({displayName: "Card",
       classes += " showing"
     }
 
+    if (card.kanji == "") {
+      card.kanji = card.kana
+      card.kana = ""
+    }
+
     return (
       React.createElement("div", {className: classes, onClick: this.toggle}, 
         React.createElement("div", {className: "card-content"}, 
@@ -42,7 +47,7 @@ var App = React.createClass({displayName: "App",
       this.setState({
         decks: vocab,
         currentDeck: 0,
-        mode: "ask-jp",        
+        mode: "ask-jp",
       })
   },
 
@@ -50,7 +55,7 @@ var App = React.createClass({displayName: "App",
     return {  };
   },
 
-  switchChapter: function(k) {
+  switchChapter(k) {
     this.setState({ currentDeck: k })
   },
 
@@ -69,16 +74,24 @@ var App = React.createClass({displayName: "App",
     )
 
     var cards = this.state.decks[this.state.currentDeck].map(
-      (c, k) => React.createElement(Card, {key: "card-"+k, card: c, mode: this.state.mode})
+      (c, k) => React.createElement(Card, {key: "card-"+this.state.currentDeck+"-"+k, card: c, mode: this.state.mode})
     )
 
 
-    return React.createElement("div", {className: "cards"}, 
+    return React.createElement("div", null, 
       React.createElement("div", {className: "decks"}, 
+        React.createElement("h1", null, "Learn your Japanese <(^.^<)"), 
         decks
       ), 
-      React.createElement("button", {onClick: this.switchMode}, "Switch Mode"), 
-      cards
+      React.createElement("div", {className: "controls"}, 
+        React.createElement("button", {onClick: this.switchMode}, "Reverse Questions"), 
+        React.createElement("button", {onClick: this.hideAnswers}, "Hide Answers"), 
+        React.createElement("button", {onClick: this.showAnswers}, "Show Answers")
+      ), 
+      React.createElement("h1", null, "Chapter "+(this.state.currentDeck+1)), 
+      React.createElement("div", {className: "cards"}, 
+        cards
+      )
     );
   }
 });

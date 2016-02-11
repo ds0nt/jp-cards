@@ -20,6 +20,11 @@ var Card = React.createClass({
       classes += " showing"
     }
 
+    if (card.kanji == "") {
+      card.kanji = card.kana
+      card.kana = ""
+    }
+
     return (
       <div className={classes} onClick={this.toggle}>
         <div className="card-content">
@@ -41,7 +46,7 @@ var App = React.createClass({
       this.setState({
         decks: vocab,
         currentDeck: 0,
-        mode: "ask-jp",        
+        mode: "ask-jp",
       })
   },
 
@@ -49,7 +54,7 @@ var App = React.createClass({
     return {  };
   },
 
-  switchChapter: function(k) {
+  switchChapter(k) {
     this.setState({ currentDeck: k })
   },
 
@@ -68,16 +73,24 @@ var App = React.createClass({
     )
 
     var cards = this.state.decks[this.state.currentDeck].map(
-      (c, k) => <Card key={"card-"+k} card={c} mode={this.state.mode} />
+      (c, k) => <Card key={"card-"+this.state.currentDeck+"-"+k} card={c} mode={this.state.mode} />
     )
 
 
-    return <div className="cards">
+    return <div>
       <div className="decks">
+        <h1>{"Learn your Japanese <(^.^<)"}</h1>
         {decks}
       </div>
-      <button onClick={this.switchMode}>Switch Mode</button>
-      {cards}
+      <div className="controls">
+        <button onClick={this.switchMode}>Reverse Questions</button>
+        <button onClick={this.hideAnswers}>Hide Answers</button>
+        <button onClick={this.showAnswers}>Show Answers</button>
+      </div>
+      <h1>{"Chapter "+(this.state.currentDeck+1)}</h1>
+      <div className="cards">
+        {cards}
+      </div>
     </div>;
   }
 });

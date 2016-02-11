@@ -1,8 +1,54 @@
 body {
-  background-color: #e2e4e6;
+  background-color: #dacaaa;
 }
 
 .decks {
+  padding: 1em;
+  border: 1px solid #999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #EEE;
+}
+
+.decks > button {
+  margin: 5px;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.controls {
+  margin: auto;
+  padding-top: 1em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,7 +74,9 @@ body {
   align-items: center;
 }
 
-.decks > button {
+.controls > button {
+  background: #2185d0;
+  color: white;
   margin: 5px;
   -webkit-box-ordinal-group: 1;
   -webkit-order: 0;
@@ -89,6 +137,7 @@ button:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 1em;
 }
 
 .card {
@@ -104,7 +153,7 @@ button:hover {
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
-  background: white;
+  background: #E3E3E3;
   box-shadow: 1px 1px 3px #333;
 }
 
@@ -166,7 +215,7 @@ button:hover {
 
 .kanji {
   color: #222;
-  font-size: 120%;
+  font-size: 130%;
 }
 
 .kana {
