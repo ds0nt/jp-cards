@@ -1,5 +1,8 @@
 var React = require("react")
 var ReactDOM = require("react-dom")
+var EventEmitter = require("events").EventEmitter
+
+var events = new EventEmitter()
 
 var Card = React.createClass({
   getInitialState() {
@@ -7,11 +10,18 @@ var Card = React.createClass({
       showing: false
     }
   },
+
+  componentWillMount() {
+    events.on("hide", () => this.setState({ showing: false }))
+    events.on("show", () => this.setState({ showing: true }))
+  },
+
   toggle() {
     this.setState({
       showing: !this.state.showing
     })
   },
+
   render: function() {
     var card = this.props.card;
 
@@ -60,6 +70,14 @@ var App = React.createClass({
 
   switchMode() {
     this.setState({ mode:  this.state.mode == "ask-jp" ? "ask-en" : "ask-jp" })
+  },
+
+  hideAnswers() {
+    events.emit("hide")
+  },
+
+  showAnswers() {
+    events.emit("show")
   },
 
   render: function () {
