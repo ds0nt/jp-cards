@@ -1,0 +1,126 @@
+
+body {
+  background-color: #e2e4e6;
+}
+
+.decks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.decks > button {
+    margin: 5px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+button {
+  box-shadow: 0 0 0 1px #2185d0 inset;
+  color: #2185d0;
+  background: none;
+  font-weight: 400;
+    border-radius: .28571429rem;
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    border: none;
+    vertical-align: baseline;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    margin: 0 .25em 0 0;
+    padding: .78571429em 1.5em;
+}
+
+
+button:hover {
+  background-color: #3ac0ff;
+  color: #FFF;
+  box-shadow: none;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 5px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+
+  background: white;
+  box-shadow: 1px 1px 3px #333;
+
+}
+
+.card-content {
+  min-width: 200px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.card-content > div {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.card-question {
+  margin-top: 1em;
+}
+
+.card.ask-en .card-question {
+  display: none;
+}
+
+.card.ask-jp .card-answer {
+  display: none;
+}
+
+
+.kanji {
+  color: #222;
+  font-size: 120%;
+}
+
+.kana {
+  color: #444;
+  font-size: 90%;
+}
+
+.card-answer {
+  padding: 1em 0;
+  color: #222;
+  font-size: 120%;
+  margin-bottom: 1em;
+  align-self: stretch;
+}
+
+.card.showing .card-question,
+.card.showing .card-hint {
+  display: block;
+}
+
+.card.showing .card-answer {
+  display: block;
+}
+
+.loading-cards {
+  content: "loading cards ...";
+}
