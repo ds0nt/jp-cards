@@ -1,0 +1,217 @@
+yōkoso
+ようこそ
+Welcome
+konnichiwa
+今日は
+Hello
+ossu
+おっす
+Hello (used between close male friends)
+moshi moshi
+もしもし
+Hello (on the phone)
+o genki desu ka?
+お元気ですか？
+How are you?
+hai, genki desu. anata wa?
+はい、元気です。あなたは
+Reply to 'How are you?'
+o kagesama de genki desu
+お蔭様で元気です
+Another Reply to 'How are you?
+hisashiburi
+久しぶり
+Long time no see
+o hisashiburi desu ne
+お久しぶりですね
+Long time no see
+o-namae wa nan desu ka
+お名前はなんですか?
+What's your name?
+Shusshin wa doko desu ka?
+出身はどこですか？
+Where are you from?
+Dochira kara desu ka?
+どちらからですか
+Where are you from?
+(watashi wa) ... shusshin desu
+(私は) ～出身です
+I'm from ...
+hajimemashite
+初めまして
+Pleased to meet you
+hajimemashite. dōzo yoroshiku
+初めまして。どうぞ宜しく
+(reply to 初めまして (hajimemashite))
+
+
+
+お会いできて嬉しいです (oaidekite ureshii desu)
+Good morning
+(Morning greeting)	お早うございます / おはようございます (ohayō gozaimasu)
+お早う / おはよう (ohayō)
+Good afternoon
+(Afternoon greeting)	こんにちは [今日は] (konnichiwa)
+Good evening
+(Evening greeting)	今晩は / こんばんは (konbanwa)
+Good night	おやすみなさい (oyasumi nasai)
+おやすみ (oyasumi)
+Goodbye
+(Parting phrases)	さようなら (sayōnara)
+いって来ます (ittekimasu)
+- 'I'll be back' - you are leaving
+いってらっしゃい (itterasshai)
+- 'come back soon' - you are staying
+じゃあまたね (jā mata ne) - see you later
+Good luck	ご幸運を祈ります! (gokoūn o inorimasu) - frm
+頑張ってね (gambatte ne) - inf
+Cheers!
+(Toasts used when drinking)	乾杯 (kanpai) lit. "dry glass"
+Have a nice day	良い一日を (Yoi ichinichi o)
+Bon appetit /
+Have a nice meal	どうぞめしあがれ (douzo meshiagare)
+= 'enjoy your meal' - said by the cook/chef
+いただきます (itadakimasu)
+- said before a meal by those eating it
+ご馳走さまでした (gochisōsama deshita)
+- said after a meal by those who have eaten it
+Bon voyage /
+Have a good journey	よい旅行を (yoi ryokō o)
+ごきげんよう！ (gokigen yō - Goodbye / Good luck)
+いってらっしゃい (itte irasshai - Go and come back)
+一路平安を祈る (ichiroheian o inoru)
+- I wish you a smooth road (old fashioned)
+I understand	わかります (wakarimasu)
+わかる (wakaru) inf
+I don't understand	わかりません (wakarimasen) - frm
+わからない (wakaranai) - inf
+Please speak more slowly	ゆっくり話してください (yukkuri hanashite kudasai)
+ゆっくり言ってください (yukkuri itte kudasai)
+Please write it down	書いてください (kaite kudasai)
+書いて、頂けますか (kaite itadakemasu ka)
+Please say that again	もう一度、言ってください (mō ichido, itte kudasai)
+Do you speak English?	英語はできますか (Eigo wa dekimasu ka?)
+Do you speak Japanese?	日本語を話しますか (Nihongo o hanashimasu ka?)
+日本語は話せますか (Nihongo wa hanasemasu ka?)
+日本語はできますか (Nihongo wa dekimasu ka?)
+Yes, a little
+(reply to 'Do you speak ...?')	はい、話します (Hai, hanashimasu)
+はい、話せます (Hai, hanasemasu)
+はい、出来ます (Hai, dekimasu)
+How do you say ... in Japanese?	... は日本語でなんと言いますか。
+(... wa nihongo de nanto īmasu ka?)
+Excuse me	すみません! (sumimasen)
+How much is this?	いくらですか (ikura desu ka?)
+Sorry	ごめんなさい! (gomen nasai)
+Thank you	どうも (dōmo)
+ありがとう (arigatō)
+ありがとうございます (arigatō gozaimasu)
+どうもありがとう (dōmo arigatō)
+どうもありがとうございます (dōmo arigatō gozaimasu)
+Reply to thank you	どう致しまして / どういたしまして (dō itashimashite)
+Where's the toilet?	便所はどこですか (benjo wa doko desu ka?)
+トイレはどこですか (toire wa doko desu ka?)
+手洗いはどこですか (tearai wa doko desu ka?)
+This gentleman/lady will pay for everything	この人が全部払います
+(konohito ga zembu haraimasu)
+Would you like to dance with me?	一緒に踊りませんか
+(isshoni odorimasenka?)
+I miss you	あなたがいなくて寂しいです (anata ga inakute sabishī desu)
+寂しい です (sabishī desu)
+あなたが恋しいです (anata ga koishī desu) - to a lover/spouse
+I love you	好きです (suki desu)
+好きだ (suki da)
+好きだよ (suki dayo)
+好きよ (suki yo) f
+大好きです (daisuki desu)
+愛してるよ (aishiteru yo)
+愛してるわ (aishiteru wa) >f
+Get well soon	お大事に (odaiji ni)
+Leave me alone!	ほっといて! (hottoite!)
+Help!	助けて! (tasukete!)
+Fire!	火事だ! (kaji da!)
+Call the police!	警察を呼んでください!
+(keisatsu o yonde kudasai!)
+Christmas and New Year greetings	メリークリスマス (merī kurisumasu)
+New Year greeting - 'Western' style
+新年おめでとうございます (shinnen omedetō gozaimasu)
+New Year greetings (used before New Year)
+良いお年を (yoi otoshi o) - inf
+良いお年をお迎え下さい (yoi otoshi o omukae kudasai) - frm
+New Year greetings (used at New Year, not before)
+明けましておめでとうございます
+(akemashite omedetō gozaimasu)
+旧年中大変お世話になりました
+(kyūnenjū taihen osewa ni narimashita)
+今年もよろしくお願いします
+(kotoshi mo yoroshiku onegai itashimasu)
+Easter greetings	復活祭おめでとうございます
+(fukkatsu-sai omedetō gozaimasu)
+イースターおめでとうございます
+(īsutā omedetō gozaimasu)
+Birthday greetings	お誕生日おめでとうございます
+(otanjōbi omedetō gozaimasu)
+One language is never enough	言語を一つは決して足りない
+(gengo o hitotsu wa kesshite tarinai)
+言語は一つだけでは足りない
+(gengo hitotsu dake de wa tarinai)
+My hovercraft is full of eels
+Why this phrase?	私のホバークラフトは鰻でいっぱいです
+(Watashi no hobākurafuto wa unagi de ippai desu.)
+Other phrases
+Do you understand?	わかりますか (wakarimasu ka?) - frm
+I understood	わかりました (wakarimashta) - frm
+I don't speak Japanese	日本語を話せません (Nihongo o hanasemasen)
+Does anyone speak English?	英語の話せる人はいませんか (Eigo no hanaseru hito wa imasen ka)
+誰か、英語が話せますか
+(dare ka, eigo ga hanasemasu ka?)
+Sorry, I didn't understand that	すみません。分かりませんでした
+(sumimasen. wakarimasen deshita)
+What did you say?	なんて言いましたか
+(nan te iimashita ka?)
+Can you translate it for me?	訳してください
+(yakushite kudasai)
+What does this mean?	これはどういう意味ですか
+(kore wa dōiu imi desu ka)
+How do you pronounce that?	これはどんな風に発音しますか
+(kore wa donna fū ni hatsuon shimasu ka)
+There's a problem in the room	その部屋の中に問題があります
+(sono heya no naka ni mondai ga arimasu)
+There's no hot water	お湯がありません
+(oyu ga arimasen)
+The tap/faucet is leaking	蛇口が漏れています
+(jaguchi ga moreteimasu)
+The drain is blocked	排水溝が詰まっています
+(haisuikō ga tsumatteimasu)
+The air conditioner is too noisy	エアコンがうるさすぎます
+(eakon ga urusasugimasu)
+Can I have another room?	他の部屋へ移れますか
+(hoka no heya e utsuremasu ka?)
+When should I vacate the room?	いつ、部屋を出なくてはなりませんか
+(itsu, heya o denakute wa narimasen ka?)
+I'd like to check out	チェックアウトしたいのですが
+(chekkuauto shitai no desu ga)
+I'd check out on this date	この日にチェックアウトしたいのですが
+(kono hi ni chekkuauto shitai no desu ga)
+Could you call a taxi please?	タクシーを呼んで下さい
+(takusī o yonde kudasi?)
+May I see the bill please?	請求書を見せて頂けますか
+(seikyūsho o misete itadakemasu ka?)
+How much is the total bill?	請求書の合計額は、いくらですか
+(seikyūsho no gōkei wa ikura desu ka?)
+Can I have an itemised bill?	明細書を見せて頂けますか
+(meisaisho o misete itadakemasu ka?)
+I think there's a mistake on this bill	この請求書に間違いがあるように思うのですが
+(kono seikyūsho ni machigai ga aruyō ni omō no desu ka?)
+Is there a restaurant near here?	近くにレストランはありますか
+(chikaku ni resutoran wa arimasu ka?)
+I'd like to reserve a table	テーブルの予約を取りたいのですが
+(tēburu no yoyaku o toritai no desu ga)
+We have a reservation	既に予約をとっています
+(sudeni yoyaku o totte imasu)
+Do you have an English menu?	英語のメ二ューはありますか
+(eigo no menyu wa arimasu ka?)
+Can I see the wine list?	ワインのリストを見せて頂けませんか
+(wain no risuto o misete itadakemasen ka?)
+I am a vegetarian	私は菜食主義者です
+(watashi wa saishokushugisha desu)
