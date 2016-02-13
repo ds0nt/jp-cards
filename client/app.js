@@ -67,7 +67,10 @@ var App = React.createClass({
   },
 
   getInitialState: function () {
-    return {  };
+    return {
+      showHiragana: false,
+      showKatakana: false,
+    };
   },
 
   switchChapter(k) {
@@ -86,6 +89,12 @@ var App = React.createClass({
     events.emit("show")
   },
 
+  toggleHiragana() {
+    this.setState({ showHiragana: !this.state.showHiragana })
+  },
+  toggleKatakana() {
+    this.setState({ showKatakana: !this.state.showKatakana })
+  },
   render: function () {
     if (this.state.decks.length == 0) {
       return (<div className="loading-cards"></div>)
@@ -102,6 +111,7 @@ var App = React.createClass({
 
 
     return <div>
+      <div className={"backdrop " + (this.state.showHiragana || this.state.showKatakana ? "active" : "")}> </div>
       <div className="decks">
         <h1>{"Learn your Japanese <(^.^<)"}</h1>
         {decks}
@@ -110,10 +120,21 @@ var App = React.createClass({
         <button onClick={this.switchMode}>Reverse Questions</button>
         <button onClick={this.hideAnswers}>Hide Answers</button>
         <button onClick={this.showAnswers}>Show Answers</button>
+        <span className="button-spacer"></span>
+        <button onClick={this.toggleHiragana}>Hiragana</button>
+        <button onClick={this.toggleKatakana}>Katakana</button>
       </div>
       <h1>{"Chapter "+(this.state.currentDeck+1)}</h1>
       <div className="cards">
         {cards}
+      </div>
+      <div className={"hiragana-chart " + (this.state.showHiragana ? "active" : "")}>
+        <img src="hiragana.svg" />
+        <span className="close" onClick={this.toggleHiragana}>Close</span>
+      </div>
+      <div className={"katakana-chart " + (this.state.showKatakana ? "active" : "")}>
+        <img src="katakana.svg" />
+        <span className="close" onClick={this.toggleKatakana}>Close</span>
       </div>
     </div>;
   }
