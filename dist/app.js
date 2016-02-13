@@ -23,6 +23,11 @@ var Card = React.createClass({displayName: "Card",
     })
   },
 
+  openExamples() {
+    var url = "http://tangorin.com/examples/" + this.props.card.kanji;
+    window.open(url, '_blank');
+  },
+
   render: function() {
     var card = this.props.card;
 
@@ -45,7 +50,8 @@ var Card = React.createClass({displayName: "Card",
           ), 
           React.createElement("div", {className: "card-answer"}, 
             React.createElement("div", null, card.english)
-          )
+          ), 
+          React.createElement("i", {className: "question icon", onClick: this.openExamples}, "?")
         )
       )
     )

@@ -141,6 +141,7 @@ button:hover {
 }
 
 .card {
+  position: relative;
   margin: 5px;
   -webkit-box-ordinal-group: 1;
   -webkit-order: 0;
@@ -203,6 +204,13 @@ button:hover {
 
 .card-question {
   margin-top: 1em;
+}
+
+.card .question.icon {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: #333;
 }
 
 .card.ask-en .card-question {
