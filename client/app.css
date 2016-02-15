@@ -1,5 +1,44 @@
 body {
-  background-color: #dacaaa;
+  background: linear-gradient(to right, rgba(244,244,244,1) 0%, rgba(226,226,232,1) 47%, rgba(217,217,222,1) 100%);
+}
+
+page-title {
+  font-family: sans-serif;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 140%;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+button {
+  box-shadow: 0 0 0 1px #2185d0 inset;
+  color: #2185d0;
+  background: none;
+  font-weight: 400;
+  border-radius: .28571429rem;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 1em;
+  border: none;
+  vertical-align: baseline;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  margin: 0 .25em 0 0;
+  padding: .78571429em 1.5em;
+}
+
+button.kana-button {
+  box-shadow: 0 0 0 1px rgba(120,0,0,1) inset;
+  color: rgba(120,0,0,1);
+
+}
+
+button:hover {
+  background-color: #3ac0ff;
+  color: #FFF;
+  box-shadow: none;
 }
 
 .decks {
@@ -12,14 +51,26 @@ body {
   align-content: center;
   align-items: center;
   background: #EEE;
+  margin-bottom: 1em;
 }
 
 .decks > button {
-    margin: 5px;
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
+  margin: 5px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
 }
+
+.decks > button.active {
+  background: #2185d0;
+  color: #EEE;
+  pointer-events: none;
+  margin: 5px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
 
 .controls {
   margin: auto;
@@ -35,33 +86,10 @@ body {
 .controls > button {
   background: #2185d0;
   color: white;
-    margin: 5px;
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-}
-
-button {
-  box-shadow: 0 0 0 1px #2185d0 inset;
-  color: #2185d0;
-  background: none;
-  font-weight: 400;
-    border-radius: .28571429rem;
-    cursor: pointer;
-    display: inline-block;
-    min-height: 1em;
-    border: none;
-    vertical-align: baseline;
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-    margin: 0 .25em 0 0;
-    padding: .78571429em 1.5em;
-}
-
-
-button:hover {
-  background-color: #3ac0ff;
-  color: #FFF;
-  box-shadow: none;
+  margin: 5px;
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
 }
 
 .button-spacer {
@@ -165,46 +193,78 @@ button:hover {
 }
 
 .backdrop {
-  display: none;
+  pointer-events: none;
+  opacity: 0;
   z-index: 999;
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms ease-in;
 }
 
 .backdrop.active {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .hiragana-chart,
 .katakana-chart {
+  border: 0.25em solid #555;
+  padding: 1em;
+  pointer-events: none;
+  opacity: 0;
   z-index: 1000;
-  display: none;
   max-width: 100vw;
   max-height: 100vh;
   position: fixed;
   top: 50%;
   left: 50%;
+  background: #F4F4F3;
   transform: translate3d(-50%, -50%, 0);
+  transition: opacity 200ms ease-in;
 }
 
 .hiragana-chart.active,
 .katakana-chart.active {
-  display: block;
-  background: #F4F4F3;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .hiragana-chart .close,
 .katakana-chart .close {
+  display: inline-block;
   position: absolute;
   cursor: pointer;
   padding: 0.3em;
-  right: 0.5em;
-  top: 0.25em;
-  border-radius: 3px;
-  border: 1px solid red;
-  color: red;
+  height: 1em;
+  width: 1em;
+  right: 0;
+  top: 0;
+  transform: translate3d(50%, -50%, 0);
+  border-radius: 15px;
+  background: #555;
+  box-shadow: 1px 1px 2px rgba(0,0,0, 0.6);
+  color: #EEE;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.hiragana-chart .close:hover,
+.katakana-chart .close:hover {
+  background: #00D9FF;
+}
+
+.hiragana-chart div.title,
+.katakana-chart div.title {
+  width: 100%;
+  text-align: center;
+  color: #111;
+  font-weight: bold;
+  font-size: 130%;
+  font-family: sans-serif;
+  margin-bottom: 0.25em;
 }

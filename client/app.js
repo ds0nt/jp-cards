@@ -102,7 +102,7 @@ var App = React.createClass({
 
 
     var decks = this.state.decks.map(
-      (c, k) => <button onClick={e => this.switchChapter(k)}>{"Chapter "+(k+1)}</button>
+      (c, k) => <button className={this.state.currentDeck == k ? "active" : ""} onClick={e => this.switchChapter(k)}>{"Chapter "+(k+1)}</button>
     )
 
     var cards = this.state.decks[this.state.currentDeck].map(
@@ -113,28 +113,29 @@ var App = React.createClass({
     return <div>
       <div className={"backdrop " + (this.state.showHiragana || this.state.showKatakana ? "active" : "")}> </div>
       <div className="decks">
-        <h1>{"Learn your Japanese <(^.^<)"}</h1>
+        <page-title>{"Japanese Study Cards <(^.^<)"}</page-title>
         {decks}
+        <button className="kana-button" onClick={this.toggleHiragana}>Hiragana</button>
+        <button className="kana-button" onClick={this.toggleKatakana}>Katakana</button>
       </div>
       <div className="controls">
         <button onClick={this.switchMode}>Reverse Questions</button>
         <button onClick={this.hideAnswers}>Hide Answers</button>
         <button onClick={this.showAnswers}>Show Answers</button>
         <span className="button-spacer"></span>
-        <button onClick={this.toggleHiragana}>Hiragana</button>
-        <button onClick={this.toggleKatakana}>Katakana</button>
       </div>
-      <h1>{"Chapter "+(this.state.currentDeck+1)}</h1>
       <div className="cards">
         {cards}
       </div>
       <div className={"hiragana-chart " + (this.state.showHiragana ? "active" : "")}>
+        <div className="title">Hiragana Chart</div>
         <img src="hiragana.svg" />
-        <span className="close" onClick={this.toggleHiragana}>Close</span>
+        <span className="close" onClick={this.toggleHiragana}>X</span>
       </div>
       <div className={"katakana-chart " + (this.state.showKatakana ? "active" : "")}>
+        <div className="title">Katakana Chart</div>
         <img src="katakana.svg" />
-        <span className="close" onClick={this.toggleKatakana}>Close</span>
+        <span className="close" onClick={this.toggleKatakana}>X</span>
       </div>
     </div>;
   }

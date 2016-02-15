@@ -103,7 +103,7 @@ var App = React.createClass({displayName: "App",
 
 
     var decks = this.state.decks.map(
-      (c, k) => React.createElement("button", {onClick: e => this.switchChapter(k)}, "Chapter "+(k+1))
+      (c, k) => React.createElement("button", {className: this.state.currentDeck == k ? "active" : "", onClick: e => this.switchChapter(k)}, "Chapter "+(k+1))
     )
 
     var cards = this.state.decks[this.state.currentDeck].map(
@@ -114,28 +114,29 @@ var App = React.createClass({displayName: "App",
     return React.createElement("div", null, 
       React.createElement("div", {className: "backdrop " + (this.state.showHiragana || this.state.showKatakana ? "active" : "")}, " "), 
       React.createElement("div", {className: "decks"}, 
-        React.createElement("h1", null, "Learn your Japanese <(^.^<)"), 
-        decks
+        React.createElement("page-title", null, "Japanese Study Cards <(^.^<)"), 
+        decks, 
+        React.createElement("button", {className: "kana-button", onClick: this.toggleHiragana}, "Hiragana"), 
+        React.createElement("button", {className: "kana-button", onClick: this.toggleKatakana}, "Katakana")
       ), 
       React.createElement("div", {className: "controls"}, 
         React.createElement("button", {onClick: this.switchMode}, "Reverse Questions"), 
         React.createElement("button", {onClick: this.hideAnswers}, "Hide Answers"), 
         React.createElement("button", {onClick: this.showAnswers}, "Show Answers"), 
-        React.createElement("span", {className: "button-spacer"}), 
-        React.createElement("button", {onClick: this.toggleHiragana}, "Hiragana"), 
-        React.createElement("button", {onClick: this.toggleKatakana}, "Katakana")
+        React.createElement("span", {className: "button-spacer"})
       ), 
-      React.createElement("h1", null, "Chapter "+(this.state.currentDeck+1)), 
       React.createElement("div", {className: "cards"}, 
         cards
       ), 
       React.createElement("div", {className: "hiragana-chart " + (this.state.showHiragana ? "active" : "")}, 
+        React.createElement("div", {className: "title"}, "Hiragana Chart"), 
         React.createElement("img", {src: "hiragana.svg"}), 
-        React.createElement("span", {className: "close", onClick: this.toggleHiragana}, "Close")
+        React.createElement("span", {className: "close", onClick: this.toggleHiragana}, "X")
       ), 
       React.createElement("div", {className: "katakana-chart " + (this.state.showKatakana ? "active" : "")}, 
+        React.createElement("div", {className: "title"}, "Katakana Chart"), 
         React.createElement("img", {src: "katakana.svg"}), 
-        React.createElement("span", {className: "close", onClick: this.toggleKatakana}, "Close")
+        React.createElement("span", {className: "close", onClick: this.toggleKatakana}, "X")
       )
     );
   }
